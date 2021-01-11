@@ -6,8 +6,8 @@ target 'HeroisMarvel' do
   use_frameworks!
 
   # Pods for HeroisMarvel
-  pod 'Alamofire', '~> 5.2'
-  pod 'Kingfisher', '~> 6.0'
+  pod 'Alamofire', '~> 4.5'
+  pod 'Kingfisher', '~> 4.0'
   pod 'SwiftHash'
 
 end
