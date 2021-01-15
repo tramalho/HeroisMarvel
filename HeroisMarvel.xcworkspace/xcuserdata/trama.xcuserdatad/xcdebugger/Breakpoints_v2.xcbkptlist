@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HeroisMarvel/HeroesTableViewController.swift"
-            timestampString = "632359079.169382"
+            timestampString = "632364183.23423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "loadHeroes()"
             landmarkType = "7">
          </BreakpointContent>

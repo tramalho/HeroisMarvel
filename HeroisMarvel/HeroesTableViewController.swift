@@ -19,7 +19,7 @@ class HeroesTableViewController: UITableViewController {
     
     var name: String?
     private var heroes: [Hero] = []
-    private var loadingHerores = false
+    private var loadingHeroes = false
     private var currentPage = 0
     private var total = 0
     
@@ -40,8 +40,15 @@ class HeroesTableViewController: UITableViewController {
         return heroes.count
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? HeroViewController,
+            let index = tableView.indexPathForSelectedRow?.row {
+            vc.hero = heroes[index]
+        }
+    }
+    
     private func loadHeroes() {
-        loadingHerores = true
+        loadingHeroes = true
         MarvelAPI().loadHeroes(name: name, page: currentPage) { (info) in
             if let info = info {
                 self.heroes += info.data.results
@@ -56,7 +63,7 @@ class HeroesTableViewController: UITableViewController {
     
     private func reloadData() {
         DispatchQueue.main.async {
-            self.loadingHerores = false
+            self.loadingHeroes = false
             self.label.text = "Sem resultados para o nome: \(self.name ?? "")"
             self.tableView.reloadData()
         }
@@ -68,5 +75,13 @@ class HeroesTableViewController: UITableViewController {
         cell.prepareCell(with: heroes[indexPath.row])
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == heroes.count - 10 && !loadingHeroes && heroes.count != total {
+            loadHeroes()
+            print("total:\(total) | carregados: \(heroes.count)")
+        }
     }
 }
