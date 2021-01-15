@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		37FB300125AB92700080A585 /* MarvelClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB300025AB92700080A585 /* MarvelClasses.swift */; };
 		37FB300325AD12A40080A585 /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB300225AD12A40080A585 /* MarvelAPI.swift */; };
+		37FB300525AE90F60080A585 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FB300425AE90F60080A585 /* HeroTableViewCell.swift */; };
 		A13D20961F9D323300EB19F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D20951F9D323300EB19F7 /* AppDelegate.swift */; };
 		A13D20981F9D323300EB19F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D20971F9D323300EB19F7 /* ViewController.swift */; };
 		A13D209B1F9D323300EB19F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13D20991F9D323300EB19F7 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		32266D4B9D2D5EE0BB121371 /* Pods-HeroisMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroisMarvel.release.xcconfig"; path = "Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel.release.xcconfig"; sourceTree = "<group>"; };
 		37FB300025AB92700080A585 /* MarvelClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelClasses.swift; sourceTree = "<group>"; };
 		37FB300225AD12A40080A585 /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
+		37FB300425AE90F60080A585 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
 		6A10124828E698C235225B01 /* Pods_HeroisMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroisMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13D20921F9D323300EB19F7 /* HeroisMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroisMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13D20951F9D323300EB19F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				A13D20A11F9D323300EB19F7 /* Info.plist */,
 				37FB300025AB92700080A585 /* MarvelClasses.swift */,
 				37FB300225AD12A40080A585 /* MarvelAPI.swift */,
+				37FB300425AE90F60080A585 /* HeroTableViewCell.swift */,
 			);
 			path = HeroisMarvel;
 			sourceTree = "<group>";
@@ -178,12 +181,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Keys-framework/Keys.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHash/SwiftHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keys.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHash.framework",
@@ -227,6 +232,7 @@
 				A13D20981F9D323300EB19F7 /* ViewController.swift in Sources */,
 				37FB300325AD12A40080A585 /* MarvelAPI.swift in Sources */,
 				A13D20961F9D323300EB19F7 /* AppDelegate.swift in Sources */,
+				37FB300525AE90F60080A585 /* HeroTableViewCell.swift in Sources */,
 				A13D20A81F9D331600EB19F7 /* HeroesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

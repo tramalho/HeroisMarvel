@@ -27,12 +27,16 @@ struct Hero: Codable {
     let name: String
     let description: String
     let thumbnail:Thumbnail
-    let url: [HeroURL]
+    let urls: [HeroURL]
 }
 
 struct Thumbnail: Codable {
     let path: String
     let ext: String
+    
+    var fullPath: String {
+        return "\(path).\(ext)"
+    }
     
     private enum CodingKeys: String, CodingKey {
         case path

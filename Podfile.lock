@@ -1,10 +1,12 @@
 PODS:
   - Alamofire (4.9.1)
+  - Keys (1.0.1)
   - Kingfisher (4.10.1)
   - SwiftHash (2.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - Keys (from `Pods/CocoaPodsKeys`)
   - Kingfisher (~> 4.0)
   - SwiftHash
 
@@ -14,11 +16,16 @@ SPEC REPOS:
     - Kingfisher
     - SwiftHash
 
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Keys: a576f4c9c1c641ca913a959a9c62ed3f215a8de9
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SwiftHash: 6d312abe61c8359bdef8d0093642f3a70b1c17ba
 
-PODFILE CHECKSUM: 0d72b2e1e2659bd714c882ea5bbbec9f321233c1
+PODFILE CHECKSUM: cc08f3b959e9d4b938c7ea9c794e4906c790ced1
 
 COCOAPODS: 1.10.1
